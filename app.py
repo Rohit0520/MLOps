@@ -12,7 +12,7 @@ def home():
     <h2>Loan Approval Prediction</h2>
     '''
 
-@app.route('/predict')
+@app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
 
